@@ -1,0 +1,13 @@
+h1{color: darkblue;
+text-align: center;
+}
+p {background-color: blue;
+color: cornsilk;
+display: inline-block;
+width: 500px;
+height: 200px;
+padding: 5px 0 5px 0;
+margin: 20px;
+text-align: center;
+
+}
