@@ -1,3 +1,6 @@
+let name = prompt("what is your name ")
+alert("wlecome to my website \" " + name+" \"")
+
 let level = prompt("do you think I'm in level 201")
 if (level !== null) {
     level = level.toLowerCase();
@@ -5,10 +8,13 @@ if (level !== null) {
 
 switch (level){
     case 'yes':
+    case 'y':
+        
 alert("you got it right (*_*)")
 console.log('you got it right (*_*)');
 break;
 case 'no':
+    case 'n':
     console.log("I'am in level 201");
     alert("you don't know me well, better luck next time ")
     break;
@@ -24,10 +30,12 @@ if (coffee!== null) {
     coffee = coffee.toLowerCase();
 switch (coffee){
     case 'yes':
+    case 'y':
 alert("you don't know me well ,I Don't like coffee ")
 console.log("you don't know me well");
 break;
-case 'no':
+    case 'no':
+    case 'n':
     console.log("you got it , I Don't like coffee (*_*)");
     alert("you got it , I Don't like coffee ")
     break;
@@ -41,10 +49,12 @@ if (smoke!== null) {
     smoke = smoke.toLowerCase();
 switch (smoke){
     case 'yes':
+    case 'y':
 alert("yes unfortunately I'am a Smoker  ")
 console.log('I\'ll try to quit ');
 break;
-case 'no':
+    case 'no':
+    case 'n':
     console.log("unfortunately I'am a Smoker ");
     alert(" unfortunately I'am a Smoker ")
     break;
@@ -58,10 +68,12 @@ if (study!== null) {
     study = study.toLowerCase();
 switch (study){
     case 'yes':
+    case 'y':
 alert("you git it right")
 console.log('I\'am a Software engineer');
-break;
-case 'no':
+break;  
+    case 'no':
+    case 'n':
     console.log("you didn't get it right");
     alert("I\'am a Software engineer (-_-)")
     break;
@@ -75,10 +87,12 @@ if (interacting!== null) {
     interacting = interacting.toLowerCase();
 switch (interacting){
     case 'yes':
+    case 'y':
 alert("so you can share the link for this simple websie")
 console.log('you adore my website');
 break;
-case 'no':
+    case 'no':
+    case 'n':
     console.log("I'll kick you from the website");
     alert(" I'll kick you from the website")
     break;

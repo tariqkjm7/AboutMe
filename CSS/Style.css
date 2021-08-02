@@ -1,5 +1,6 @@
-h1{color: darkblue;
+#header1 {color: darkblue;
 text-align: center;
+text-size-adjust: 150px;
 }
 p {background-color: blue;
 color: cornsilk;
