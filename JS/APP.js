@@ -1,4 +1,5 @@
 'use strict'
+let answers = 0;
 
 let name = prompt("what is your name ")
 alert("wlecome to my website \" " + name+" \"")
@@ -14,6 +15,7 @@ switch (level){
         
 alert("you got it right (*_*)")
 console.log('you got it right (*_*)');
+answers++;
 break;
 case 'no':
     case 'n':
@@ -40,6 +42,8 @@ break;
     case 'n':
     console.log("you got it , I Don't like coffee (*_*)");
     alert("you got it , I Don't like coffee ")
+    answers++;
+
     break;
     default:
         alert("these are yes or no qustions please type   yes / no ")
@@ -54,6 +58,7 @@ switch (smoke){
     case 'y':
 alert("yes unfortunately I'am a Smoker  ")
 console.log('I\'ll try to quit ');
+answers++;
 break;
     case 'no':
     case 'n':
@@ -73,6 +78,7 @@ switch (study){
     case 'y':
 alert("you git it right")
 console.log('I\'am a Software engineer');
+answers++;
 break;  
     case 'no':
     case 'n':
@@ -92,6 +98,8 @@ switch (interacting){
     case 'y':
 alert("so you can share the link for this simple websie")
 console.log('you adore my website');
+answers++;
+
 break;
     case 'no':
     case 'n':
@@ -102,3 +110,59 @@ break;
         alert("these are yes or no qustions please type   yes / no ")
 }
 }
+
+
+// this is my guessing Game
+
+alert("now we will enter a guessuing game *(*_*)* you have onley 4 attempts ")
+let myNumber = 7;
+
+for(let i = 0; i < 4 ; i++){
+    let  userNumber = prompt("guess  a number between 1 and 10 ")
+
+if (userNumber == myNumber){
+    alert("you got it ")
+    answers++;
+break;
+}
+
+if(userNumber > myNumber){
+alert("your guess is grater than the number ")
+}
+
+if(userNumber < myNumber){
+alert("your number is lower than the number ")
+}
+
+
+}
+
+alert("guess what is my level in code feleowes is ")
+let myArray = [101,102,201]
+alert("you can choose from these levls "+myArray+"401,501,505,601,701")
+
+let attempts = 6;
+let userInput = prompt("enter your guess...be careful you only have 6 attempts")
+let x =0;
+while(  x < attempts){
+    for(let r = 0; r < myArray.length; r++){
+        if(userInput == myArray[r]){
+            alert("you got it right ")
+            x=attempts;
+            answers++;
+
+            break;
+        }
+        else { let attempts1 = attempts-x;
+            if(r==2){            userInput = prompt ("try again you now only have " +attempts1+ "attempts")
+}
+        
+    }
+    
+}
+    x++;
+}
+
+alert("well done you got "+answers+"out of 7")
+
+
