@@ -122,6 +122,9 @@ function question4() {
 
 question4()
 
+
+function question5() {
+
 let interacting = prompt("do you like interacting with my website ")
 if (interacting !== null) {
     interacting = interacting.toLowerCase();
@@ -142,6 +145,8 @@ if (interacting !== null) {
             alert("these are yes or no qustions please type   yes / no ")
     }
 }
+}
+question5()
 
 
 // this is my guessing Game
