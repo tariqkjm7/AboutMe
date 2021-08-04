@@ -69,6 +69,13 @@ function question2() {
     }
 }
 
+question2()
+
+
+////////////////////////////Q2///////////////////////////////////
+function question3() {
+    
+
 let smoke = prompt("do you think I'm smoker ")
 if (smoke!== null) {
     smoke = smoke.toLowerCase();
@@ -88,6 +95,8 @@ break;
         alert("these are yes or no qustions please type   yes / no ")
 }
 }
+}
+question3()
 
 let study = prompt(" do you think I'am a Software engineer ")
 if (study!== null) {
