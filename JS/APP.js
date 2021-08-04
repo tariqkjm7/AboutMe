@@ -4,30 +4,45 @@ let answers = 0;
 let name = prompt("what is your name ")
 alert("wlecome to my website \" " + name+" \"")
 
-let level = prompt("do you think I'm in level 201")
-if (level !== null) {
-    level = level.toLowerCase();
+
+////////////////////////////Q1///////////////////////////////////
 
 
-switch (level){
-    case 'yes':
-    case 'y':
-        
-alert("you got it right (*_*)")
-console.log('you got it right (*_*)');
-answers++;
-break;
-case 'no':
-    case 'n':
-    console.log("I'am in level 201");
-    alert("you don't know me well, better luck next time ")
+function question1(){
+
+    let level = prompt("do you think I'm in level 201")
+    if (level !== null) {
+        level = level.toLowerCase();
+    
+    
+    switch (level){
+        case 'yes':
+        case 'y':
+            
+    alert("you got it right (*_*)")
+    console.log('you got it right (*_*)');
+    answers++;
     break;
-    default:
-        alert("these are yes or no qustions please type   yes / no ")
-}
+    case 'no':
+        case 'n':
+        console.log("I'am in level 201");
+        alert("you don't know me well, better luck next time ")
+        break;
+        default:
+            alert("these are yes or no qustions please type   yes / no ")
+    }
+    }
+
 }
 
 
+question1()
+/////////////////////////////////////////////////////////////////////////
+
+
+
+
+////////////////////////////Q2///////////////////////////////////
 
 let coffee = prompt("do you think I like coffee")
 if (coffee!== null) {
