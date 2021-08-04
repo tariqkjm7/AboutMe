@@ -1,15 +1,18 @@
 'use strict'
 let answers = 0;
 
-let name = prompt("what is your name ")
-alert("wlecome to my website \" " + name + " \"")
 
 
+function welcome() {
+    let name = prompt("what is your name ")
+    alert("wlecome to my website \" " + name + " \"")
+}
+
+welcome()
 ////////////////////////////Q1///////////////////////////////////
 
 
 function question1() {
-
     let level = prompt("do you think I'm in level 201")
     if (level !== null) {
         level = level.toLowerCase();
@@ -129,26 +132,26 @@ question4()
 
 function question5() {
 
-let interacting = prompt("do you like interacting with my website ")
-if (interacting !== null) {
-    interacting = interacting.toLowerCase();
-    switch (interacting) {
-        case 'yes':
-        case 'y':
-            alert("so you can share the link for this simple websie")
-            console.log('you adore my website');
-            answers++;
+    let interacting = prompt("do you like interacting with my website ")
+    if (interacting !== null) {
+        interacting = interacting.toLowerCase();
+        switch (interacting) {
+            case 'yes':
+            case 'y':
+                alert("so you can share the link for this simple websie")
+                console.log('you adore my website');
+                answers++;
 
-            break;
-        case 'no':
-        case 'n':
-            console.log("I'll kick you from the website");
-            alert(" I'll kick you from the website")
-            break;
-        default:
-            alert("these are yes or no qustions please type   yes / no ")
+                break;
+            case 'no':
+            case 'n':
+                console.log("I'll kick you from the website");
+                alert(" I'll kick you from the website")
+                break;
+            default:
+                alert("these are yes or no qustions please type   yes / no ")
+        }
     }
-}
 }
 question5()
 
@@ -158,30 +161,30 @@ question5()
 ////////////////////////////Q6///////////////////////////////////
 
 function question6() {
-    
 
-alert("now we will enter a guessuing game *(*_*)* you have onley 4 attempts ")
-let myNumber = 7;
 
-for (let i = 0; i < 4; i++) {
-    let userNumber = prompt("guess  a number between 1 and 10 ")
+    alert("now we will enter a guessuing game *(*_*)* you have onley 4 attempts ")
+    let myNumber = 7;
 
-    if (userNumber == myNumber) {
-        alert("you got it ")
-        answers++;
-        break;
+    for (let i = 0; i < 4; i++) {
+        let userNumber = prompt("guess  a number between 1 and 10 ")
+
+        if (userNumber == myNumber) {
+            alert("you got it ")
+            answers++;
+            break;
+        }
+
+        if (userNumber > myNumber) {
+            alert("your guess is grater than the number ")
+        }
+
+        if (userNumber < myNumber) {
+            alert("your number is lower than the number ")
+        }
+
+
     }
-
-    if (userNumber > myNumber) {
-        alert("your guess is grater than the number ")
-    }
-
-    if (userNumber < myNumber) {
-        alert("your number is lower than the number ")
-    }
-
-
-}
 }
 
 question6()
@@ -189,36 +192,36 @@ question6()
 ////////////////////////////Q7///////////////////////////////////
 
 function question7() {
-    
 
 
-alert("guess what is my level in code feleowes is ")
-let myArray = [101, 102, 201]
-alert("you can choose from these levls " + myArray + "401,501,505,601,701")
 
-let attempts = 6;
-let userInput = prompt("enter your guess...be careful you only have 6 attempts")
-let x = 0;
-while (x < attempts) {
-    for (let r = 0; r < myArray.length; r++) {
-        if (userInput == myArray[r]) {
-            alert("you got it right ")
-            x = attempts;
-            answers++;
+    alert("guess what is my level in code feleowes is ")
+    let myArray = [101, 102, 201]
+    alert("you can choose from these levls " + myArray + "401,501,505,601,701")
 
-            break;
-        }
-        else {
-            let attempts1 = attempts - x;
-            if (r == 2) {
-                userInput = prompt("try again you now only have " + attempts1 + "attempts")
+    let attempts = 6;
+    let userInput = prompt("enter your guess...be careful you only have 6 attempts")
+    let x = 0;
+    while (x < attempts) {
+        for (let r = 0; r < myArray.length; r++) {
+            if (userInput == myArray[r]) {
+                alert("you got it right ")
+                x = attempts;
+                answers++;
+
+                break;
+            }
+            else {
+                let attempts1 = attempts - x;
+                if (r == 2) {
+                    userInput = prompt("try again you now only have " + attempts1 + "attempts")
+                }
+
             }
 
         }
-
+        x++;
     }
-    x++;
-}
 
 }
 question7()
