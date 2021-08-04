@@ -4,16 +4,16 @@ let answers = 0;
 
 
 function welcome() {
-    let name = prompt("what is your name ")
-    alert("wlecome to my website \" " + name + " \"")
+    let name = prompt("what is your name ");
+    alert("welcome to my website \" " + name + " \"");
 }
 
-welcome()
+welcome();
 ////////////////////////////Q1///////////////////////////////////
 
 
 function question1() {
-    let level = prompt("do you think I'm in level 201")
+    let level = prompt("do you think I'm in level 201");
     if (level !== null) {
         level = level.toLowerCase();
 
@@ -28,11 +28,11 @@ function question1() {
                 break;
             case 'no':
             case 'n':
-                console.log("I'am in level 201");
+                console.log("i'm in level 201");
                 alert("you don't know me well, better luck next time ")
                 break;
             default:
-                alert("these are yes or no qustions please type   yes / no ")
+                alert("these are yes or no questions please type   yes / no ")
         }
     }
 
@@ -67,7 +67,7 @@ function question2() {
 
                 break;
             default:
-                alert("these are yes or no qustions please type   yes / no ")
+                alert("these are yes or no questions please type   yes / no ")
         }
     }
 }
@@ -85,17 +85,17 @@ function question3() {
         switch (smoke) {
             case 'yes':
             case 'y':
-                alert("yes unfortunately I'am a Smoker  ")
+                alert("yes unfortunately i'm a Smoker  ")
                 console.log('I\'ll try to quit ');
                 answers++;
                 break;
             case 'no':
             case 'n':
-                console.log("unfortunately I'am a Smoker ");
-                alert(" unfortunately I'am a Smoker ")
+                console.log("unfortunately i'm a Smoker ");
+                alert(" unfortunately i'm a Smoker ")
                 break;
             default:
-                alert("these are yes or no qustions please type   yes / no ")
+                alert("these are yes or no questions please type   yes / no ")
         }
     }
 }
@@ -105,23 +105,23 @@ question3()
 
 function question4() {
 
-    let study = prompt(" do you think I'am a Software engineer ")
+    let study = prompt(" do you think i'm a Software engineer ")
     if (study !== null) {
         study = study.toLowerCase();
         switch (study) {
             case 'yes':
             case 'y':
                 alert("you git it right")
-                console.log('I\'am a Software engineer');
+                console.log("i'm a Software engineer");
                 answers++;
                 break;
             case 'no':
             case 'n':
                 console.log("you didn't get it right");
-                alert("I\'am a Software engineer (-_-)")
+                alert("i'm a Software engineer (-_-)")
                 break;
             default:
-                alert("these are yes or no qustions please type   yes / no ")
+                alert("these are yes or no questions please type   yes / no ")
         }
     }
 }
@@ -138,7 +138,7 @@ function question5() {
         switch (interacting) {
             case 'yes':
             case 'y':
-                alert("so you can share the link for this simple websie")
+                alert("so you can share the link for this simple website")
                 console.log('you adore my website');
                 answers++;
 
@@ -149,7 +149,7 @@ function question5() {
                 alert(" I'll kick you from the website")
                 break;
             default:
-                alert("these are yes or no qustions please type   yes / no ")
+                alert("these are yes or no questions please type   yes / no ")
         }
     }
 }
@@ -163,7 +163,7 @@ question5()
 function question6() {
 
 
-    alert("now we will enter a guessuing game *(*_*)* you have onley 4 attempts ")
+    alert("now we will enter a guessing game *(*_*)* you have only 4 attempts ")
     let myNumber = 7;
 
     for (let i = 0; i < 4; i++) {
@@ -195,9 +195,9 @@ function question7() {
 
 
 
-    alert("guess what is my level in code feleowes is ")
+    alert("guess what is my level in code fellows is ")
     let myArray = [101, 102, 201]
-    alert("you can choose from these levls " + myArray + "401,501,505,601,701")
+    alert("you can choose from these levels " + myArray + "401,501,505,601,701")
 
     let attempts = 6;
     let userInput = prompt("enter your guess...be careful you only have 6 attempts")
