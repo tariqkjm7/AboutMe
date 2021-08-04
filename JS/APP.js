@@ -72,7 +72,7 @@ function question2() {
 question2()
 
 
-////////////////////////////Q2///////////////////////////////////
+////////////////////////////Q3///////////////////////////////////
 function question3() {
 
 
@@ -97,6 +97,9 @@ function question3() {
     }
 }
 question3()
+
+////////////////////////////Q4///////////////////////////////////
+
 function question4() {
 
     let study = prompt(" do you think I'am a Software engineer ")
@@ -122,6 +125,7 @@ function question4() {
 
 question4()
 
+////////////////////////////Q5///////////////////////////////////
 
 function question5() {
 
@@ -151,6 +155,11 @@ question5()
 
 // this is my guessing Game
 
+////////////////////////////Q6///////////////////////////////////
+
+function question6() {
+    
+
 alert("now we will enter a guessuing game *(*_*)* you have onley 4 attempts ")
 let myNumber = 7;
 
@@ -173,6 +182,9 @@ for (let i = 0; i < 4; i++) {
 
 
 }
+}
+
+question6()
 
 alert("guess what is my level in code feleowes is ")
 let myArray = [101, 102, 201]
