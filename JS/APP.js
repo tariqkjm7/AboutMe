@@ -37,32 +37,36 @@ function question1(){
 
 
 question1()
-/////////////////////////////////////////////////////////////////////////
+
 
 
 
 
 ////////////////////////////Q2///////////////////////////////////
 
-let coffee = prompt("do you think I like coffee")
-if (coffee!== null) {
-    coffee = coffee.toLowerCase();
-switch (coffee){
-    case 'yes':
-    case 'y':
-alert("you don't know me well ,I Don't like coffee ")
-console.log("you don't know me well");
-break;
-    case 'no':
-    case 'n':
-    console.log("you got it , I Don't like coffee (*_*)");
-    alert("you got it , I Don't like coffee ")
-    answers++;
 
+function question2() {
+
+    let coffee = prompt("do you think I like coffee")
+    if (coffee!== null) {
+        coffee = coffee.toLowerCase();
+    switch (coffee){
+        case 'yes':
+        case 'y':
+    alert("you don't know me well ,I Don't like coffee ")
+    console.log("you don't know me well");
     break;
-    default:
-        alert("these are yes or no qustions please type   yes / no ")
-}
+        case 'no':
+        case 'n':
+        console.log("you got it , I Don't like coffee (*_*)");
+        alert("you got it , I Don't like coffee ")
+        answers++;
+    
+        break;
+        default:
+            alert("these are yes or no qustions please type   yes / no ")
+    }
+    }
 }
 
 let smoke = prompt("do you think I'm smoker ")
