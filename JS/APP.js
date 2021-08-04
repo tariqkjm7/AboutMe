@@ -186,6 +186,12 @@ for (let i = 0; i < 4; i++) {
 
 question6()
 
+////////////////////////////Q7///////////////////////////////////
+
+function question7() {
+    
+
+
 alert("guess what is my level in code feleowes is ")
 let myArray = [101, 102, 201]
 alert("you can choose from these levls " + myArray + "401,501,505,601,701")
@@ -213,6 +219,9 @@ while (x < attempts) {
     }
     x++;
 }
+
+}
+question7()
 
 alert("well done you got " + answers + "out of 7")
 
