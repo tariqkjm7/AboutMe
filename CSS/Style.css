@@ -1,9 +1,9 @@
 h1 {
-    color: darkblue;
+    color:red;
     text-align: center;
     font-size: 150px;
 }
-#aboutMe {background-color: blue;
+#aboutMe {background-color:black;
 color: cornsilk;
 display: inline-block;
 width: 500px;
@@ -12,5 +12,35 @@ padding: 5px 0 5px 0;
 margin: 20px;
 text-align: center;
 margin-left: 500px;
+line-height: 30px;
+
+}
+
+p {
+    color: red;
+    background-color: black;
+    text-align: center;
+}
+
+span{
+    color: red;
+    text-align: center;
+}
+footer{
+    position:fixed;
+    color: red;
+    width: 100%;
+    top: 97%;
+    background-color: black;
+}
+#rap{
+    color: red;
+    text-align: center;
+}
+#thank{
+
+    color: red;
+    text-align: center;
+    background-color: black;
 
 }
